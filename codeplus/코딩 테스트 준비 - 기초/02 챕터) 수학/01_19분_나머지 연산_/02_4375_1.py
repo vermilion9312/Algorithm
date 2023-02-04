@@ -57,8 +57,8 @@ print('===[2023-02-02 (목)]===')
 #         i += 1
 
 
-for i in range(20):
-    i += 1
-    num = (1 / 9) * (10 ** i) - (1 / 9)
-    num = int(num)
-    print(num)
+# for i in range(20):
+#     i += 1
+#     num = (1 / 9) * (10 ** i) - (1 / 9)
+#     num = int(num)
+#     print(num)
