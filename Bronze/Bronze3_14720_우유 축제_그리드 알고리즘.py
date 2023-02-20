@@ -7,4 +7,9 @@ milk = [0, 1, 2]
 
 count = 0
 for s in store:
-    
+    mi = 0
+    while True:
+        if s == milk[mi]:
+            mi += 1
+            
+

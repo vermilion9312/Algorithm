@@ -1,5 +1,8 @@
 # https://www.acmicpc.net/problem/10162
 
+
+print('===[2023-01-25 (수)]===')
+
 button = [300, 60, 10]
 
 T = int(input())
