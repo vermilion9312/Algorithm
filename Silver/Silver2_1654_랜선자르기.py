@@ -1,6 +1,8 @@
 k, n = map(int, input().split())
 arr = [int(input()) for _ in range(k)]
 
+
+# 시간초과
 # k = 2
 # n = 10
 
