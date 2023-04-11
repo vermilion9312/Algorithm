@@ -1,4 +1,5 @@
 # https://www.acmicpc.net/problem/1152
 
-arr = list(input().split())
-print(arr)
+print("230411-2-2132")
+
+print(len(list(input().split())))
