@@ -1,13 +1,20 @@
 # https://www.acmicpc.net/problem/2309
 
 n = 9
-arr = [int(input()) for _ in range(n)]
-arr.sort()
+dwarfs = []
+for i in range(9):
+    dwarfs.append(int(input()))
 
-for i in range(n):
-    for j in range(i + 1, n):
-        for k in range(n):
-            print(i, j, k)
+dwarfs_sum = sum(dwarfs)
+
+for i in range(8):
+    for j in range(i + 1, 9):
+        if dwarfs_sum - dwarfs[i] - dwarfs[j] == 100:
+            for k in range(9):
+                if k != i and k != j:
+                    print(dwarfs[k])
+            exit()
+
 
 
 
