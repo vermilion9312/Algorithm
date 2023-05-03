@@ -1,5 +1,7 @@
 # https://www.acmicpc.net/problem/11034
 
+print("230503-3-0939")
+
 while True:
     try:
         position = list(map(int, input().split()))
