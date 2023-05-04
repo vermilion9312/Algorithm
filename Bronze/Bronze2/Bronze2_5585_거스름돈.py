@@ -1,5 +1,7 @@
 # https://www.acmicpc.net/problem/5585
 
+print("230504-4-0913")
+
 changeList = [500, 100, 50, 10, 5, 1]
 
 price = int(input())

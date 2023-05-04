@@ -1,8 +1,5 @@
 # https://www.acmicpc.net/problem/3578
 
-numList = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-holes =   [1, 0, 0, 0, 1, 0, 1, 0, 2, 1]
-
 h = int(input())
 num = ''
 
