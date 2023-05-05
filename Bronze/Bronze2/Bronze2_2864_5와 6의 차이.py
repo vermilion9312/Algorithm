@@ -1,5 +1,7 @@
 # https://www.acmicpc.net/problem/2864
 
+print("230505-5-1700")
+
 a, b = map(int, input().split())
 
 a = int(str(a).replace("5", "6"))
