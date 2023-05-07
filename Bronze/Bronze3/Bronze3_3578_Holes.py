@@ -1,5 +1,7 @@
 # https://www.acmicpc.net/problem/3578
 
+print("230506-6")
+
 h = int(input())
 num = ''
 if h == 0:
