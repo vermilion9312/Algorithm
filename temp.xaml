@@ -1,0 +1,31 @@
+!Sequence
+    !Open Broswer
+        BrowserType: Chrome
+        Url: "https://www.naver.com/"
+
+        !Assign
+            a_지역(System.string[]) = {"서울", "부산", "전주", "강릉", "대전", "제주도"}
+
+        !Build Data Table
+            지역(String) | 기온(String) | 지금시간(String)
+            
+        !For Each
+            List of items: a_지역
+            Item: s_지역
+
+            !Assign
+                s_검색어(String) = String.Format("{0}날씨[k(enter)]", s_지역)
+
+            !Click
+                Target: 네이버 검색창
+
+            !Type Into
+                Target: 네이버 검색창
+                Text: s_검색어
+
+            !Get Text
+                Target: 기온
+                Output Value: s_기온(String)
+
+            
+            !go back
