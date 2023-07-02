@@ -20,4 +20,3 @@ import math
 #         elif target < mid:
 #             right = mid
 #         else:
-print(round(3.5))
