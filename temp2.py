@@ -1,26 +1,10 @@
-import random
-
-a = []
-count = 0
-check = True
-
-
+import re
+pattern = "a|e|i|o|u|A|E|I|O|U"
 while True:
-    if check == True:
-        r = random.randint(1, 30)
-        if r % 2 != 0:
-            a.append(r)
-        check = False
-
-    r = random.randint(1, 30)
-
-    if r % 2 != 0:
-        for i in range(len(a)):
-            while a[i] == r:
-                r = random.randint(1, 30)                
-        a.append(r)
-        count += 1
-    if count == 10:
+    str = input()
+    if str == "#":
         break
 
-print(a)
+    matches = re.findall(pattern, str)
+    print(len(matches))
+    
