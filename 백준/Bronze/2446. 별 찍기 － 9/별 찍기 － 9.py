@@ -1,25 +1,6 @@
 n = int(input())
 
-l = 2 * n - 1
-k = 0
-for i in range(l):
-    if i < l // 2:
-        for j in range(l):
-            if j >= 0 + i and j <= l - 1 - i:
-                print("*", end="")
-            elif j < 0 + i:
-                print(" ", end="")
-    elif i > l // 2:
-        for j in range(l):
-            if j >= l // 2 - 1 - k and j <= l // 2 + 1 + k:
-                print("*", end="")
-            elif j < l // 2 - 1 - k:
-                print(" ", end="")
-        k += 1
-    else:
-        for j in range(l):
-            if i == j:
-                print("*", end="")
-            elif j < i:
-                print(" ", end="")
-    print()
+for i in range(n):
+    print(' ' * i + '*' * (2 * n - 1 - 2 * i))
+for i in range(n - 1):
+    print(' ' * (n - 2 - i) + '*' * (3 + 2 * i))
