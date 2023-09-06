@@ -1,8 +1,6 @@
 n = int(input())
-h = 2 * n
 
-for i in range(1, h):
-    w = n - abs(i - n)
-    for j in range(w):
-        print("*", end="")
-    print()
+for i in range(n):
+    print('*' * (i + 1))
+for i in range(n - 1):
+    print('*' * (n - 1 - i))
